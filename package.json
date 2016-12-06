@@ -1,0 +1,153 @@
+{
+  "name": "sw-build-tools",
+  "version": "0.1.0",
+  "description": "Service Worker build tools.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix ",
+    "pretest": "npm run lint -- --quiet",
+    "test": "ava test/test.js --verbose"
+  },
+  "license": "WTFPL",
+  "author": "Mark Tiedemann <www.marktiedemann@gmail.com>",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "keywords": [
+    "sw",
+    "service",
+    "worker",
+    "service-worker",
+    "build",
+    "tools",
+    "sync",
+    "version",
+    "generate",
+    "config"
+  ],
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "glob-all": "^3.1.0",
+    "throw-if-missing": "^1.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "eslint": "^3.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkTiedemann/sw-build-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarkTiedemann/sw-build-tools/issues"
+  },
+  "homepage": "https://github.com/MarkTiedemann/sw-build-tools",
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true,
+      "serviceworker": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-console": [
+        "off"
+      ],
+      "no-ternary": [
+        "off"
+      ],
+      "multiline-ternary": [
+        "error",
+        "never"
+      ],
+      "max-len": [
+        "error",
+        80
+      ],
+      "eol-last": [
+        "error",
+        "always"
+      ],
+      "max-nested-callbacks": [
+        "error",
+        3
+      ],
+      "max-depth": [
+        "error",
+        3
+      ],
+      "max-statements": [
+        "error",
+        20
+      ],
+      "newline-before-return": [
+        "off"
+      ],
+      "no-multiple-empty-lines": [
+        "error"
+      ],
+      "one-var": [
+        "off"
+      ],
+      "no-sync": [
+        "off"
+      ],
+      "lines-around-directive": [
+        "error",
+        "always"
+      ],
+      "newline-after-var": [
+        "off"
+      ],
+      "newline-per-chained-call": [
+        "error",
+        {
+          "ignoreChainWithDepth": 2
+        }
+      ],
+      "object-curly-spacing": [
+        "error",
+        "never"
+      ],
+      "one-var-declaration-per-line": [
+        "error",
+        "always"
+      ],
+      "dot-location": [
+        "error",
+        "property"
+      ],
+      "operator-linebreak": [
+        "error",
+        "before",
+        {
+          "overrides": {
+            "=": "after"
+          }
+        }
+      ],
+      "id-length": [
+        "off"
+      ],
+      "padded-blocks": [
+        "error",
+        "never"
+      ],
+      "capitalized-comments": [
+        "off"
+      ]
+    }
+  }
+}
