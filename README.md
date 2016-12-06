@@ -139,6 +139,11 @@ tools.syncVersion({
   - **dryRun**: `false`
   - **verbose**: `{{NODE_ENV != production}}`
 
+## Todos
+
+- Add links to more resources about Service Workers
+- Create webpack plugin
+
 ## License
 
 [WTFPL](http://www.wtfpl.net/) – Do What the F*ck You Want to Public License.
