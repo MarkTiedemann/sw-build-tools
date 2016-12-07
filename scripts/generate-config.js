@@ -7,8 +7,8 @@ const glob = require('glob-all')
 module.exports = ({
   inputDirectory = 'src',
   outputDirectory = 'dist',
-  serviceWorkerName = 'service-worker-config.js',
-  serviceWorkerScope = '/',
+  configName = 'service-worker-config.js',
+  scope = '/',
   navigatorProperty = 'serviceWorkerConfig',
   prefetchRoot = true,
   prefetchResources = [],
@@ -31,7 +31,7 @@ module.exports = ({
     allResources.unshift('')
   }
 
-  const resources = allResources.map(res => `${serviceWorkerScope}${res}`)
+  const resources = allResources.map(res => `${scope}${res}`)
 
   if (verbose) {
     for (const res of resources) {
@@ -49,7 +49,7 @@ ${resourcesAsString}
   ]
 }`
 
-  const filePath = path.join(outputDirectory, serviceWorkerName)
+  const filePath = path.join(outputDirectory, configName)
 
   if (verbose) {
     console.log(`Trying to save Service Worker config in '${filePath}' ...`)

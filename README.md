@@ -83,8 +83,8 @@ tools.generateConfig({
 
   - **inputDirectory**: `src`
   - **outputDirectory**: `dist`
-  - **serviceWorkerName**: `service-worker-config.js`
-  - **serviceWorkerScope**: `/`
+  - **configName**: `service-worker-config.js`
+  - **scope**: `/`
   - **navigatorProperty**: `serviceWorkerConfig`
   - **prefetchRoot**: `true`
   - **prefetchResources**: `[]`
